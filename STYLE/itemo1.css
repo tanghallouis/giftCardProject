@@ -19,7 +19,7 @@ body {
   transform: scaleX(-1);
 }
 .header {
-  background-color: rgb(43, 38, 36);
+  background-color: #211919;
   height: 70px;
   width: 100%;
   position: sticky;
