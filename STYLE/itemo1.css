@@ -44,7 +44,7 @@ body {
   bottom: -2px;
   transform: translateX(-90%);
   border-radius: 50%;
-  border: 3px black solid;
+  border: 3px #2b2624 solid;
 }
 #info {
   height: 25px;
@@ -79,6 +79,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: rgb(43, 38, 36);
+  padding: 8px 0px;
   /* border: 1px lime solid; */
 }
 .header2-left,
