@@ -9,12 +9,13 @@ body {
   background-color: rgb(242, 242, 242);
 }
 .header {
-  /* background-color: rgb(43, 38, 36); */
-  height: 108px;
+  background-color: rgb(43, 38, 36);
+  height: 70px;
   width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 1;
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 .header-1 {
   display: flex;
@@ -77,16 +78,19 @@ body {
 .header-2 {
   display: flex;
   justify-content: space-between;
-  /* position: relative; */
-  top: 15px;
-  margin: 0 70px;
-  /* margin-top: 50px; */
-  border: 1px lime solid;
+  background-color: rgb(43, 38, 36);
+  /* border: 1px lime solid; */
 }
 .header2-left,
 .header2-right {
   display: flex;
   gap: 5px;
+}
+.header2-left {
+  margin-left: 70px;
+}
+.header2-right {
+  margin-right: 70px;
 }
 a {
   text-decoration: none;
@@ -112,7 +116,7 @@ a {
   justify-content: center;
 }
 .container {
-  margin-top: 108px;
+  /* margin-top: 108px; */
   display: flex;
   position: relative;
   width: 95%;
