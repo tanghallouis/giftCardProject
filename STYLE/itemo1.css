@@ -460,4 +460,7 @@ button {
   .inside {
     bottom: 40px;
   }
+  .staging-gradient {
+    visibility: hidden;
+  }
 }
