@@ -1,3 +1,12 @@
+@font-face {
+  font-family: giftCardSemiBoldCon;
+  src: url(../ASSETS/FONTS/Greed-CondensedSemiBold.8ced3f7c.ttf);
+}
+@font-face {
+  font-family: giftCardSemiBold;
+  src: url(../ASSETS/FONTS/Greed-SemiBold.784a822c.ttf);
+}
+
 body,
 p,
 button {
@@ -73,10 +82,11 @@ body {
   height: 30px;
 }
 .account > p {
-  font-family: Lexend, sans-serif;
+  font-family: giftCardSemiBoldCon, sans-serif;
   font-weight: 300;
   font-size: 0.85em;
   color: rgb(210, 210, 208);
+  padding-bottom: 5px;
 }
 .header-1 > img {
   height: 30px;
@@ -108,9 +118,9 @@ a {
   color: inherit;
 }
 .header-2 p {
-  font-family: Lexend, sans-serif;
+  font-family: giftCardSemiBold, sans-serif;
   color: rgb(210, 210, 208);
-  font-weight: 300;
+  font-weight: 200;
   font-size: 0.9em;
   /* border: 1px red solid; */
   padding: 10px 20px;
@@ -156,8 +166,8 @@ a {
 }
 .inside > p {
   font-weight: 600;
-  font-size: 4em;
-  font-family: Lexend, sans-serif;
+  font-size: 5em;
+  font-family: giftCardSemiBoldCon, sans-serif;
   /* padding-left: 50px; */
   margin-left: 50px;
   color: white;
@@ -200,7 +210,7 @@ button {
 }
 .switch > p {
   font-size: 13px;
-  font-family: Lexend, sans-serif;
+  font-family: giftCardSemiBoldCon, sans-serif;
   font-weight: 600;
   color: white;
 }
@@ -243,7 +253,7 @@ button {
 }
 .floater-in p {
   color: rgb(242, 242, 242);
-  font-family: lexend, sans-serif;
+  font-family: giftCardSemiBold, sans-serif;
   font-weight: 300;
   font-size: 0.9em;
 }
@@ -348,7 +358,7 @@ button {
   gap: 0.3em;
 }
 .top1 > p {
-  font-family: lexend, sans-serif;
+  font-family: giftCardSemiBold, sans-serif;
   font-size: 0.9em;
   font-weight: 600;
   padding-bottom: 30px;
@@ -401,7 +411,7 @@ button {
 .endRight {
   display: flex;
   gap: 1.5em;
-  font-family: lexend, sans-serif;
+  font-family: giftCardSemiBold, sans-serif;
   font-size: 0.9em;
   font-weight: 400;
 }
@@ -416,7 +426,7 @@ button {
     gap: 15px;
   }
   .inside p {
-    font-size: 2.4em;
+    font-size: 4em;
   }
   .inside button {
     height: 35px;
@@ -452,13 +462,16 @@ button {
 
 @media (max-width: 650px) {
   .switch > p {
-    font-size: 8px;
+    font-size: 12px;
   }
   button {
     font-size: 0.7em;
   }
   .inside {
     bottom: 40px;
+  }
+  .inside p {
+    font-size: 2.4em;
   }
   .staging-gradient {
     visibility: hidden;
