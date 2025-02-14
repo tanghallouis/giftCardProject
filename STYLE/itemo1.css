@@ -397,7 +397,9 @@ button {
 }
 .bottomFoot > img {
   margin-top: 80px;
-  height: 700px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 50px;
 }
 .end {
   display: flex;
