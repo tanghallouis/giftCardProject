@@ -1,0 +1,136 @@
+@font-face {
+  font-family: giftCardSemiBoldCon;
+  src: url(../ASSETS/FONTS/Greed-CondensedSemiBold.8ced3f7c.ttf);
+}
+@font-face {
+  font-family: giftCardSemiBold;
+  src: url(../ASSETS/FONTS/Greed-SemiBold.784a822c.ttf);
+}
+body,
+p,
+button,
+ul,
+li,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --fontSize01: 0.9em;
+  --radiusGeneral: 25px;
+  --textColorWhite01: rgb(210, 210, 208);
+  --blackOne: rgb(43, 38, 36);
+  --blackTwo: #211919;
+  --textBlue: rgb(60, 131, 188);
+  --hovercolor01: rgba(66, 66, 65, 0.905);
+  --hoverColor02: rgb(210, 210, 208);
+  --logoSize: 30px;
+  --gapSmall: 20px;
+  --generalWhiteBg: rgb(242, 242, 242);
+}
+body {
+  background-color: var(--generalWhiteBg);
+}
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  width: 100%;
+  background-color: var(--blackTwo);
+}
+header > img {
+  height: var(--logoSize);
+  margin-left: 70px;
+}
+.account {
+  display: flex;
+  gap: var(--gapSmall);
+  align-items: center;
+  margin-right: 70px;
+}
+.account > img {
+  height: var(--logoSize);
+}
+.switch-text-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* border: 1px green solid; */
+  padding: 2px 15px 4px 15px;
+  border-radius: var(--radiusGeneral);
+  background-color: var(--hovercolor01);
+}
+.switch-text-modal svg {
+  height: var(--logoSize);
+  rotate: 136deg;
+  fill: #d2d2d0;
+}
+.switch-text-modal:hover > svg {
+  fill: var(--blackTwo);
+}
+.switch-text-modal p {
+  /* border: 1px purple solid; */
+  font-family: giftCardSemiBoldCon, sans-serif;
+  font-size: 0.9em;
+  padding-bottom: 2px;
+  color: var(--textColorWhite01);
+}
+.switch-text-modal:hover {
+  background-color: var(--hoverColor02);
+}
+.switch-text-modal:hover p {
+  color: var(--blackTwo);
+}
+.curves {
+  position: absolute;
+  width: 100%;
+  left: -0px;
+  top: 0;
+  transform: translateY(70px);
+  display: flex;
+  justify-content: space-between;
+}
+.curves img:nth-of-type(2) {
+  transform: scaleX(-1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px red solid; */
+  background-color: var(--blackOne);
+  min-height: 60px;
+  padding: 0px 50px;
+}
+
+ul {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+li {
+  /* border: 1px lime solid; */
+  padding: 10px 20px;
+  font-family: giftCardSemiBold, sans-serif;
+  font-weight: 200;
+  border-radius: var(--radiusGeneral);
+}
+nav li:hover {
+  background-color: var(--hovercolor01);
+}
+
+li a {
+  text-decoration: none;
+  color: var(--textColorWhite01);
+}
+
+#refer {
+  color: var(--textBlue);
+}
